@@ -1,29 +1,30 @@
 import React, { Component } from 'react';
-import { Text, View, TextInput, Input, Button, Image } from 'react-native';
+import { Text, View, TextInput, Input, Button, Image, TouchableOpacity } from 'react-native';
 
 export default class Login extends Component {
   render() {
     return (
 
-      <View>
-
+      <View style={{marginTop: 120}}>
       <TextInput
-          style={{height: 40, borderWidth: 1}}
+          style={{height: 40, borderWidth: 1,margin: 10, textAlign: 'center', borderRadius: 20}}
           placeholder="Email"
         />
 
       <TextInput
-          style={{height: 40,  borderWidth: 1}}
+          style={{height: 40, borderWidth: 1, margin: 10, textAlign: 'center', borderRadius: 20}}
           placeholder="******"
         />
 
-    <Button
-  onPress={() => {Alert.alert('');}}
-  title="Login"
-  color="#841584"
-  />
+        <TouchableOpacity
+        style={{width: 100 ,height: 35, margin: 10, alignSelf: 'center', borderRadius: 20,backgroundColor: '#48BBEC'}}>
+        <Text style={{color: '#fff', textAlign: 'center'}}>Login</Text>
+        </TouchableOpacity>
 
-  <Image source={require('./paper.jpg')}
+  <Image
+  style={{width: 320, height: 480}}
+   source={require('./paper.jpg')}
+
      />
 
       </View>
