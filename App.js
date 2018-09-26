@@ -21,12 +21,6 @@ export default class Login extends Component {
         <Text style={{color: '#fff', textAlign: 'center'}}>Login</Text>
         </TouchableOpacity>
 
-  <Image
-  style={{width: 320, height: 480}}
-   source={require('./paper.jpg')}
-
-     />
-
       </View>
 
     );
