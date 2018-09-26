@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import { Text, View, TextInput, Input, Button, Image, TouchableOpacity, AppRegistry, StyleSheet } from 'react-native';
+import { Text, View, TextInput, Input, Button, Image, TouchableOpacity, AppRegistry, StyleSheet, KeyboardAvoidingView } from 'react-native';
 
 export default class Login extends Component {
   render() {
     return (
 
-      <View style={{marginTop: 120}}>
 
+      <View style={{marginTop: 80}}>
+
+      <Image
+      style={{width: 80, height: 80, alignSelf: 'center'}}
+      source={require('./git.png')}/>
 
       <TextInput style={estilo.caixa}
         placeholder="Email"/>
@@ -18,18 +22,13 @@ export default class Login extends Component {
         <Text style={estilo.texto}>Login</Text>
         </TouchableOpacity>
 
-        <Image
-        style={{width: 320, height: 480}}
-        source={require('./paper.jpg')}
-      />
-
       </View>
 
     );
   }
 }
 
-const estilo = StyleSheet.create({
+  const estilo = StyleSheet.create({
 
   but: {
     width: 100, height: 35, margin: 10, alignSelf: 'center', borderRadius: 20,backgroundColor: '#48BBEC', justifyContent: 'center'
