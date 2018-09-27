@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Text, View, TextInput, Input, Button, Image, TouchableOpacity, AppRegistry, StyleSheet, KeyboardAvoidingView } from 'react-native';
 
+
+
 export default class Login extends Component {
   render() {
     return (
 
 
-      <View style={{marginTop: 80}}>
-
+      <KeyboardAvoidingView behavior= {'padding'} style={{marginTop: 80}}>
+      <View>
       <Image
       style={{width: 80, height: 80, alignSelf: 'center'}}
       source={require('./git.png')}/>
@@ -21,8 +23,8 @@ export default class Login extends Component {
         <TouchableOpacity style={estilo.but}>
         <Text style={estilo.texto}>Login</Text>
         </TouchableOpacity>
-
-      </View>
+       </View>
+      </KeyboardAvoidingView>
 
     );
   }
